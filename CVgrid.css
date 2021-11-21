@@ -3,6 +3,9 @@
     padding: 20px;
     border: 2px solid gray;
     margin: 20px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .grid-container{
@@ -13,13 +16,39 @@
     margin: 20px;
 }
 
+@keyframes example {
+    from {background-color: ;}
+    to {background-color: azure;}
+    }
+
 .item1 {
     grid-column-start: 1/3;
     grid-column-end: 1/1;
-    background-color: aqua;
     padding: 20px;
     border: 2px solid pink;
     margin: 20px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.item2 {
+    grid-column-start: 2/3;
+    grid-column-end: 1/1;
+    padding: 20px;
+    border: 2px solid pink;
+    margin: 20px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.item3 {
+    grid-column-start: 3/3;
+    grid-column-end: 1/1;
+    padding: 20px;
+    border: 2px solid pink;
+    margin: 20px;
+    animation-name: example;
+    animation-duration: 4s;
 }
 
 @media only screen and (max-width:600px) {
@@ -27,3 +56,8 @@
          background-color: rgb(168, 73, 73);
     }
 }
+
+
+
+
+
